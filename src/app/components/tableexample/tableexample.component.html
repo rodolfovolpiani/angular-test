@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Athlete</th>
+        <th *ngFor="let item of athletes[0].results">{{ item.type }}</th>
+        <th>Score</th>
+        <th>Position</th>
+    </tr>
+    <tr *ngFor="let item of athletes">
+        <td>{{ item.athlete }}</td>
+        <td *ngFor="let score of item.results">{{ score.result }}</td>
+        <td>{{ item.score }}</td>
+        <td>{{ item.position }}</td>
+    </tr>
+</table>

@@ -1,0 +1,29 @@
+.about-body {
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    display: flex; /* flex container */
+    align-items: center; /* center items vertically */
+}
+
+.text {
+    width: 60%; /* 60% width for text */
+    padding: 20px; /* padding */
+}
+
+.photo {
+    width: 40%; /* 40% width for photo */
+    text-align: right; /* align photo to the right */
+}
+
+img {
+    width: 100%; /* full width for image */
+    height: auto; /* auto height */
+}
+a {
+    all: unset;
+    cursor: pointer;
+}

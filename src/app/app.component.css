@@ -1,0 +1,33 @@
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+nav {
+    background-color: var(--secondary-color); /* dark background color */
+    height: 50px; /* fixed height */
+    width: 100%; /* full width */
+    display: flex; /* flex container */
+    align-items: center; /* center items vertically */
+    justify-content: space-around; /* distribute items evenly */
+}
+
+nav ul {
+    list-style: none; /* remove bullet points */
+    display: flex; /* flex container */
+    align-items: center; /* center items vertically */
+}
+
+nav ul li {
+    margin: 0 10px; /* 10px margin on left and right */
+}
+
+nav ul li:hover {
+    background-color: #555; /* change background color on hover */
+    transition: background-color 0.4s ease-in; /* smooth transition */
+}
+
+nav ul li a {
+    color: white; /* white text color */
+    text-decoration: none; /* remove underline */
+    font-size: 18px; /* 18px font size */
+}

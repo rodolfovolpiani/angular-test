@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    /* Set global font family */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Set base color */
+    --base-color: #303030;
+    /* Set primary color */
+    --primary-color: #c0c0c0;
+    /* Set secondary color */
+    --secondary-color: #6d6d6d;
+    /* Set success color */
+    --success-color: #52c41a;
+    /* Set error color */
+    --error-color: #f5222d;
+    /* Set warning color */
+    --warning-color: #fa8c16;
+    /* Set global margin */
+    --global-margin: 20px;
+  }
+
+* {
+    margin: var(--global-margin);
+}
+
+header, footer, section {
+    margin: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+body {
+    background-color: var(--base-color);
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+input, textarea, select {
+    background-color: #404040;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button, input[type='submit'] {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
