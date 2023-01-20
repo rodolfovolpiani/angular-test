@@ -25,7 +25,7 @@ const appRoutes: Routes = [
   imports: [
     HttpClientModule,
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [HttpClient,],
   bootstrap: [AppComponent],

@@ -1,14 +1,23 @@
 <table>
-    <tr>
-        <th>Athlete</th>
-        <th *ngFor="let item of athletes[0].results">{{ item.type }}</th>
-        <th>Score</th>
-        <th>Position</th>
-    </tr>
-    <tr *ngFor="let item of athletes">
-        <td>{{ item.athlete }}</td>
-        <td *ngFor="let score of item.results">{{ score.result }}</td>
-        <td>{{ item.score }}</td>
-        <td>{{ item.position }}</td>
-    </tr>
+    <thead>
+        <tr>
+            <th>Athlete</th>
+            <th *ngFor="let modality of scoreSystem">
+                {{modality.event}}
+            </th>
+            <th>Score</th>
+            <th>Position</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let athlete of athletes">
+            <td>{{athlete.athlete}}</td>
+            <td *ngFor="let result of athlete.results">
+                {{result.result}}
+            </td>
+            <td>{{athlete.score}}</td>
+            <td>{{athlete.position}}</td>
+        </tr>
+    </tbody>
 </table>
+<button (click)="exportToCSV()">Download CSV</button>
